@@ -38,3 +38,11 @@ h2, h3, h4, h5, label, option, input, small {
 #submit-btn-div, #interest-div, #participate-div, #companies-div, #anything-else-div {
     margin-top: 0.5em;
 }
+
+#submit-btn-div {
+    margin-bottom: 0.5em;
+}
+
+#overall-container {
+    padding-top: 1.5em;
+}

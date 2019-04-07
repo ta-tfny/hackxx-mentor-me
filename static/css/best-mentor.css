@@ -31,10 +31,11 @@ h1 {
     font-family: 'SFProDisplay-Semibold';
 }
 
-h2, h3, h4, h5, label, option, input, small, form {
+h2, h3, h4, h5, label, option, input, small {
     font-family: 'SFProDisplay-Regular';
 }
 
-#overall-container {
-    padding-top: 1.5em;
+p {
+    font-family: 'SFProDisplay-Medium';
+    font-size: 1.5em;
 }
