@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MentorMe</title>
+    <link href="../static/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/formpage2.css" rel="stylesheet" type="text/css">
+    <script src="../static/js/jquery-1.11.0.js"></script>
+    <script src="../static/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid h-100 w-100 d-flex justify-content-center align-items-center">
+        <div class="grid">
+            <div class="row">
+                <div class="col col-md-12">
+                    <h1>MentorME</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-md-12">
+                    <h2>Tell us a little bit of information about yourself!</h2>
+                    <h3>We want to best match you with a mentor, so please make sure that this is as accurate as
+                        possible!</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-md-12">
+                    <form>
+                        <div>
+                            <div id="interest-div">
+                                <label>
+                                    What is your area of interest?
+                                    <select>
+                                        <option>Biology/Chemistry</option>
+                                        <option>Math/Computer Science</option>
+                                        <option>Engineering</option>
+                                        <option>Other!</option>
+                                    </select>
+    
+                                </label>
+                            </div>
+
+                            <div id="participate-div">
+                                <label for="hobbies">Which of these hobbies do you participate in?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Arts & Crafts
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Sports
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        Outdoor Activities
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                    <label class="form-check-label" for="defaultCheck4">
+                                        Reading
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                    <label class="form-check-label" for="defaultCheck5">
+                                        Cooking/Eating
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                    <label class="form-check-label" for="defaultCheck6">
+                                        Dancing
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                                    <label class="form-check-label" for="defaultCheck7">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="companies-div">
+                                <label for="hobbies">What companies do you find cool?</label>
+                                <textarea class="form-control" id="companies-text-area" rows="2"></textarea>
+                                <small id="companies-text-area" class="form-text">
+                                    Type out 2 or 3 companies that you would be interested in learning more about!
+                                </small>
+                            </div>
+
+                            <div id="anything-else-div">
+                                <label for="hobbies">Anything else we should know about you?</label>
+                                <textarea class="form-control" id="anything-else-text-area" rows="2"></textarea>
+                            </div>
+
+                            <div id="submit-btn-div">
+                                <input type="submit" value="Submit">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

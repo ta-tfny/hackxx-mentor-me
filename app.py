@@ -7,6 +7,10 @@ app = Flask(__name__)
 def main():
     return render_template("fakeform.html")
 
+@app.route("/second-page", methods=["GET"])
+def second_page():
+    return render_template("formpage2.html")
+
 # @app.route("/sms", methods=["POST"])
 # def sms():
 #     body = request.values.get('Body', None)
