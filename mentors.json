@@ -1,24 +1,34 @@
 {
     "mentors": [
         {
-            "name": "stuti grover",
-            "bio": "this is a temporary bio",
-            "email": "temp@example.com"
+            "name": "Daenerys of the House Targaryen, the First of Her Name, The Unburnt, Queen of the Andals, the Rhoynar and the First Men, Queen of Meereen, Khaleesi of the Great Grass Sea, Protector of the Realm, Lady Regent of the Seven Kingdoms, Breaker of Chains and Mother of Dragons",
+            "bio": "Queen Daenarys I Targaryen is currently the director of oculus at Facebook. Queen Daenerys I Targaryen is the younger sister of Rhaegar Targaryen and Viserys Targaryen, the paternal aunt of Jon Snow, and the youngest child of King Aerys II Targaryen and Queen Rhaella Targaryen, who were both ousted from the Iron Throne during Robert Baratheon's rebellion. Her love for fantasy has inspired a passion for virtual reality (VR) for medieval world building. The outdoors are her favorite place to be and studied biological engineering in college.",
+            "email": "snow_goddess@dragons.com"
         },
         {
-            "name": "tiffany teng",
-            "bio": "this is a temporary",
-            "email": "temp@example.com"
+            "name": "Captain Marvel (aka Captain Marvel)",
+            "bio": "Carol Danvers is currently the protector of the universe at Northrop Grumman. She studied aerospace engineering in college with hopes of becoming a pilot. However, because of an unfortunate accident, she now holds the title of intergalactic space protecting force. In her spare time she loves to build model aircraft and play with flurkens. She has two pet cats that she adores greatly.",
+            "email": "c_marvel@shield.gov"
         },
         {
-            "name": "huy le",
-            "bio": "this is a temporary",
-            "email": "temp@example.com"
+            "name": "Fa Mulan",
+            "bio": "Fa Mulan is the only tactical director in the Chinese army. She studied mathematics and the art of war at MIT. In her free time, she plays with her cricket, she loves cooking, and she intimidates men.",
+            "email": "fa_mulan@disney.com"
         },
         {
-            "name": "victoria zhang",
-            "bio": "this is a temporary",
-            "email": "temp@example.com"
+            "name": "Hermione Granger",
+            "bio": "Hermione Granger is currently the Ministress of Magic. She attended Hogwarts Academy and majored in potions, charms, transfiguration, and chemistry. In her free time she loves to read and hangout with her husband Ron. She is a strong supporter of Elf and muggle rights and is a kind and just ruler.",
+            "email": "wingardium_leviosa@ministryofmagic.com"
+        },
+        {
+            "name": "Princess Leia",
+            "bio": "Princess Leia is one of the rebel alliance’s greatest leaders having majored in computer science at UCSD. She has a soft spot for scoundrels and in her free time she enjoys playing with her blaster pistol. One of her hobbies is fashion and she likes to set trends with her space buns.",
+            "email": "leia@galacticrepublic.star"
+        },
+        {
+            "name": "Katniss Everdeen",
+            "bio": "She is the winner of the 74th and 75th Hunger Games. She overthrew the capital and abolished the 12 district caste. She majored in the liberal arts with a concentration in underwater basket weaving. She enjoys archery and hiking in her free time. Traveling is one of her least favorite passions.",
+            "email": "everdeen_fam@district12.com"
         }
     ]
 }
