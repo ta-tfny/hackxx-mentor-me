@@ -9,7 +9,7 @@ $(document).ready(() => {
             "companies": companies
         }, function (data) {
             if (data === 'done') {
-                
+                $(location).attr('href', '/mentor-match');
             }
         });
     });

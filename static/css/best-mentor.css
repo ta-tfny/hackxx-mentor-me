@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: url('../fonts/SFProDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Medium';
+    src: url('../fonts/SFProDisplay-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Semibold';
+    src: url('../fonts/SFProDisplay-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Bold';
+    src: url('../fonts/SFProDisplay-Bold.ttf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #817ccf, #f5b388);
+}
+
+h1 {
+    font-family: 'SFProDisplay-Semibold';
+}
+
+h2, h3, h4, h5, label, option, input, small {
+    font-family: 'SFProDisplay-Regular';
+}
+
+p {
+    font-family: 'SFProDisplay-Medium';
+    font-size: 1.5em;
+}

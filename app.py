@@ -1,5 +1,6 @@
 import json
 from flask import Flask, render_template, request
+from mentor_mentee_object import find_best_mentor
 
 app = Flask(__name__)
 
@@ -10,6 +11,14 @@ def main():
 @app.route("/second-page", methods=["GET"])
 def second_page():
     return render_template("formpage2.html")
+
+@app.route("/mentor-match", methods=["GET"])
+def mentor_match():
+    return render_template("best-mentor.html")
+
+@app.route("/best-mentor", methods=["GET"])
+def best_match():
+    return find_best_mentor()
 
 @app.route("/next-page", methods=["POST"])
 def next_page():
@@ -42,6 +51,7 @@ def add_new_user():
     new_dict["bio"] = dictionary["bio"]
     new_dict["companies"] = dictionary["companies"].split("\n")
 
+    # overwrites the entire json file
     with open('user.json', 'w') as current_user_file:
         json.dump(new_dict, current_user_file)
 
