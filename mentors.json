@@ -1,0 +1,28 @@
+{
+    "mentors": [
+        {
+            "name": "stuti grover",
+            "bio": "this is a temporary bio",
+            "email": "temp@example.com",
+            "similarity": 0
+        },
+        {
+            "name": "tiffany teng",
+            "bio": "this is a temporary bio",
+            "email": "temp@example.com",
+            "similarity": 0
+        },
+        {
+            "name": "huy le",
+            "bio": "this is a temporary bio",
+            "email": "temp@example.com",
+            "similarity": 0
+        },
+        {
+            "name": "victoria zhang",
+            "bio": "this is a temporary bio",
+            "email": "temp@example.com",
+            "similarity": 0
+        }
+    ]
+}

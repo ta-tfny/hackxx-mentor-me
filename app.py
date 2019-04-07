@@ -11,61 +11,41 @@ def main():
 def second_page():
     return render_template("formpage2.html")
 
-# @app.route("/sms", methods=["POST"])
-# def sms():
-#     body = request.values.get('Body', None)
-#     return twilio_object.message_response(body)
+@app.route("/next-page", methods=["POST"])
+def next_page():
+    req_data = request.form
+    dictionary = req_data.to_dict()
 
-# @app.route("/sms/<user_number>/<desire>", methods=["GET"])
-# def link(user_number, desire):
-#     session = session_manager.getSession(user_number)
-#     if session is None:
-#         return twilio_object.text_user("Error: Session has expired.", user_number)
-#     else:
-#         searchFor = json_form_object.findByType(desire)
-#         closestOrgs = google_maps_object.get_min(searchFor)
-#         response = "The closest organizations around you are:"
-#         for org in closestOrgs:
-#             mapsLink = googleLinkCreator(org[0])
-#             response += "\n\n" + org[0] + "\n" + "Google Maps Direction: " + mapsLink + "\n" + str(org[1]) + " mi away."
-#         response += "\n\nPlease send 1 to continue services or 2 to end the session."
-#         session_manager.setState(user_number, 3)
-#         twilio_object.text_user(response, user_number)
-#         return render_template("loading.html")
+    new_dict = {}
+    full_name = dictionary["first"] + " " + dictionary["last"]
+    new_dict["name"] = full_name
 
-# def googleLinkCreator(orgName):
-#     return "https://www.google.com/maps/search/?api=1&" + urllib.parse.urlencode([('query',orgName)]) + "+in+los+angeles+ca"
+    with open('user.json', 'w') as current_user_file:
+        json.dump(new_dict, current_user_file)
 
-# @app.route("/add-new-org", methods=["POST"])
-# def add_new_org():
-#     logging.basicConfig(level = logging.DEBUG)
-#     req_data = request.form
+    return "done"
 
-#     dictionary = {}
+@app.route("/add-new-user", methods=["POST"])
+def add_new_user():
+    req_data = request.form
+    dictionary = req_data.to_dict()
 
-#     dictionary = req_data.to_dict()
+    name = ""
 
-#     pd = {}
-#     pd["name"] = dictionary["name"]
-#     pd["website"] = dictionary["website"]
-#     pd["phone"] = dictionary["phone"]
-#     pd["location"] = dictionary["location"]
+    # reads json file
+    with open('user.json') as current_user_file:
+        data = json.load(current_user_file)
+        name = data["name"]
 
-#     types = []
-#     if dictionary["food"] is "Y":
-#         types.append("food")
-#     if dictionary["hygiene"] is "Y":
-#         types.append("hygiene")
-#     if dictionary["shelter"] is "Y":
-#         types.append("shelter")
+    new_dict = {}
+    new_dict["name"] = name
+    new_dict["bio"] = dictionary["bio"]
+    new_dict["companies"] = dictionary["companies"].split("\n")
 
-#     pd["types"] = types
+    with open('user.json', 'w') as current_user_file:
+        json.dump(new_dict, current_user_file)
 
-#     json_form_object.addOrgByDict(pd)
-
-#     logging.debug(json_form_object.getDictFromJSON(json_form_object.databaseDictionary))
-
-#     return 'done'
+    return "done"
 
 if __name__ == '__main__':
     app.run()

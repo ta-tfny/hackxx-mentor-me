@@ -6,111 +6,154 @@
 	<link href="../static/css/bootstrap.css" rel="stylesheet">
 	<link href="../static/css/fakeform.css" rel="stylesheet" type="text/css">
 	<script src="../static/js/jquery-1.11.0.js"></script>
-	<script src="../static/js/bootstrap.bundle.js"></script>
-
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../static/js/bootstrap.bundle.js"></script>
+	<script src="../static/js/fakeform.js"></script>
 </head>
 
 <body>
-	<div class="container register">
-		<div class="grid">
+	<div class="container h-100 w-100" id="overall-container">
+		<div class="grid w-100">
 			<div class="row">
-				<div class="col register-center">
-					<h1>Welcome to MentorME!</h1>
-					<h6>Sign Up for A New Account Here: </h6>
-				</div>
-			</div>
-			<div class="row register-center">
 				<div class="col col-md-12">
-					<h2>New Account Registration</h2>
+					<h1>Welcome to MentorMe!</h1>
 				</div>
 			</div>
-
 			<div class="row">
-				<div class="col col-md-12 h-100 w-100 d-flex justify-content-center align-items-center">
-					<form>
-						<label for="first">First Name: </label>
-						<input name="first" id="first" type="text" placeholder="John" required>
-						<label for="last">Last Name: </label>
-						<input name="last" id="last" type="text" placeholder="Smith" required>
-
-						<div>
-							<label for="highschool">High School Student</label>
-							<input id="school" name="highschool" type="radio" value="highschool">
-							<label for="middleschool">Middle School</label>
-							<input id="school" name="middleschool" type="radio" value="middleschool">
-							<label for="other">Other</label>
-							<input id="school" name="otherschool" type="radio" value="other">
-						</div>
-
-						<div>
-							<label for="email">
-								Email:
-								<input name="email" type="email" placeholder="your email" required>
-							</label>
-
-							<label for="password">
-								Password:
-								<input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters"
-								 placeholder="your password">
-							</label>
-						</div>
-						<div class="row">
-							<div class="col col-md-12 h-100 w-100 d-flex justify-content-center align-items-center">
-								<label>
-									Birthday:
-									<select>
-										<option>Birthday</option>
-										<option>Jan</option>
-										<option>Feb</option>
-										<option>March</option>
-									</select>
-
-									<select>
-										<option>Day</option>
-										<option>10</option>
-										<option>11</option>
-										<option>12</option>
-									</select>
-
-									<select>
-										<option>Year</option>
-										<option>1999</option>
-										<option>2000</option>
-										<option>2001</option>
-									</select>
-								</label>
-							</div>
-
-							<div>
-								<select>
-									<option>School</option>
-									<option>New York DOE</option>
-									<option>San Jose Unified</option>
-									<option>San Diego School District</option>
-								</select>
-
-								<select>
-									<option>Graduation Year</option>
-									<option>2019</option>
-									<option>2020</option>
-									<option>2021</option>
-									<option>2022</option>
-								</select>
-
-							</div>
-							<div>
-								<label for="agreed">I agree to the terms and conditions</label>
-								<input id="agreed" name="agreed" type="checkbox">
-							</div>
-
-							<div>
-								<input type="submit" value="Submit">
-							</div>
-						</div>
-					</form>
+				<div class="col col-md-12">
+					<h2>New Mentee Account Registration</h2>
 				</div>
 			</div>
+
+			<form class="w-100">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="first-name">First Name</label>
+						<input class="w-100" id="first-name" type="text" placeholder="John" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="last-name">Last Name</label>
+						<input class="w-100" id="last-name" type="text" placeholder="Doe" required>
+					</div>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="high-school-student" value="hs" name="education-lv">
+					<label class="form-check-label" for="high-school-student">High School Student</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="mid-school-student" value="ms" name="education-lv">
+					<label class="form-check-label" for="mid-school-student">Middle School Student</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="other-student" value="other" name="education-lv">
+					<label class="form-check-label" for="other-student">Other</label>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="email-address">Email address</label>
+						<input class="w-100" id="email-address" type="email" placeholder="johndoe123@example.com" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="password">Password</label>
+						<input class="w-100" id="password" type="password" placeholder="Password" required>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="birthday">Birthday:</label>
+						<select id="birthday" class="form-control">
+							<option selected>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>April</option>
+							<option>May</option>
+							<option>June</option>
+							<option>July</option>
+							<option>August</option>
+							<option>September</option>
+							<option>October</option>
+							<option>November</option>
+							<option>December</option>
+						</select>
+						<select class="form-control">
+							<option selected>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select class="form-control">
+							<option selected>1998</option>
+							<option>1999</option>
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+							<option>2004</option>
+							<option>2005</option>
+							<option>2006</option>
+						</select>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="school">School:</label>
+						<select id="school" class="form-control">
+							<option selected>New York DOE</option>
+							<option>San Jose Unified</option>
+							<option>San Diego School District</option>
+						</select>
+
+						<label for="graduation">Graduation Year:</label>
+						<select class="form-control">
+							<option selected>2019</option>
+							<option>2020</option>
+							<option>2021</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="form-check">
+						<input id="agreed" name="agreed" type="checkbox" required>
+						<label for="agreed">I agree to the terms and conditions</label>
+					</div>
+				</div>
+
+				<button class="btn btn-dark" type="submit" id="next-btn">Next</button>
+			</form>
 		</div>
 	</div>
 </body>

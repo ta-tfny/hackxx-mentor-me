@@ -41,43 +41,23 @@ class similarityObject:
 class Mentee:
     name = ""
     bio = ""
-    school = ""
-    graduation_year = ""
-    age = ""
-    gender = ""
     top_3_companies = []
 
-    def __init__(self, name, bio, school, graduation_year, age, gender, \
-    top_3_companies):
+    def __init__(self, name, bio, top_3_companies):
         self.name = name
         self.bio = bio
-        self.school = school
-        self.graduation_year = graduation_year
-        self.age = age
-        self.gender = gender
         self.top_3_companies = top_3_companies
 
     def __repr__(self):
         return self.name
 
 class Mentor:
-    bio = ""
-    school = ""
-    graduation_year = ""
     name = ""
-    age = ""
-    gender = ""
-    top_3_companies = []
+    bio = ""
 
-    def __init__(self, name, bio, school, graduation_year, age, gender, \
-    top_3_companies):
+    def __init__(self, name, bio):
         self.name = name
         self.bio = bio
-        self.school = school
-        self.graduation_year = graduation_year
-        self.age = age
-        self.gender = gender
-        self.top_3_companies = top_3_companies
 
     def __repr__(self):
         return self.name
