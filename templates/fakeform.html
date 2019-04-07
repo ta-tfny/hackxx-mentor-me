@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 
 <head>
-	<title>MentorMe</title>
+	<title>MentorMe Registration Page</title>
 	<link href="../static/css/bootstrap-grid.css" rel="stylesheet">
 	<link href="../static/css/bootstrap.css" rel="stylesheet">
 	<link href="../static/css/fakeform.css" rel="stylesheet" type="text/css">
 	<script src="../static/js/jquery-1.11.0.js"></script>
 	<script src="../static/js/bootstrap.bundle.js"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-	<div class="container h-100 w-100 d-flex justify-content-center align-items-center">
+	<div class="container register">
 		<div class="grid">
 			<div class="row">
-				<div class="col col-md-12">
-					<h1>MentorME</h1>
+				<div class="col register-center">
+					<h1>Welcome to MentorME!</h1>
+					<h6>Sign Up for A New Account Here: </h6>
+					<!-- <img src="https://cdn3.iconfinder.com/data/icons/smoothfill-education/30/education_004-teaching-teacher-teach-instructor-study-school-512.png" alt=""/> -->
+					<!-- <input type="submit" name="" value="Login"/><br/> -->
 				</div>
 			</div>
-			<div class="row">
+			<div class="row register-center">
 				<div class="col col-md-12">
+					<ul class="nav nav-tabs nav-justified" id="newTab" role="tab-list">
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+								aria-controls="profile" aria-selected="false">Mentee </a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+								aria-controls="profile" aria-selected="false">Mentor </a>
+						</li>
+
+					</ul>
+
 					<h2>New Account Registration</h2>
 				</div>
 			</div>
+
 			<div class="row">
-				<div class="col col-md-12">
+				<div class="col col-md-12  h-100 w-100 d-flex justify-content-center align-items-center">
 					<form>
 						<label for="first">First Name: </label>
 						<input name="first" id="first" type="text" placeholder="John" required>
@@ -31,12 +50,12 @@
 						<input name="last" id="last" type="text" placeholder="Smith" required>
 
 						<div>
-							<label for="male">Male</label>
-							<input id="male" name="gender" type="radio" value="male">
-							<label for="female">Female</label>
-							<input id="female" name="gender" type="radio" value="female">
+							<label for="highschool">High School Student</label>
+							<input id="school" name="highschool" type="radio" value="highschool">
+							<label for="middleschool">Middle School</label>
+							<input id="school" name="middleschool" type="radio" value="middleschool">
 							<label for="other">Other</label>
-							<input id="other" name="gender" type="radio" value="other">
+							<input id="school" name="otherschool" type="radio" value="other">
 						</div>
 
 						<div>
@@ -51,53 +70,51 @@
 									title="Password must be between 5 and 10 characters" placeholder="your password">
 							</label>
 						</div>
+						<div class="row">
+							<div class="col col-md-12 h-100 w-100 d-flex justify-content-center align-items-center">
+								<label>
+									Birthday:
+									<select>
+										<option>Birthday</option>
+										<option>Jan</option>
+										<option>Feb</option>
+										<option>March</option>
+									</select>
 
-						<div>
-							<label>
-								Birthday:
-								<select>
-									<option>Birthday</option>
-									<option>Jan</option>
-									<option>Feb</option>
-									<option>March</option>
-								</select>
+									<select>
+										<option>Day</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+									</select>
 
-								<select>
-									<option>Day</option>
-									<option>10</option>
-									<option>11</option>
-									<option>12</option>
-								</select>
-
-								<select>
-									<option>Year</option>
-									<option>1999</option>
-									<option>2000</option>
-									<option>2001</option>
-								</select>
-
-							</label>
+									<select>
+										<option>Year</option>
+										<option>1999</option>
+										<option>2000</option>
+										<option>2001</option>
+									</select>
+								</label>
+							</div>
 
 							<div>
+								<select>
+									<option>School</option>
+									<option>New York DOE</option>
+									<option>San Jose Unified</option>
+									<option>San Diego School District</option>
+								</select>
 
-								<div>
-									<select>
-										<option>School</option>
-										<option>New York DOE</option>
-										<option>San Jose Unified</option>
-										<option>San Diego School District</option>
-									</select>
+								<select>
+									<option>Graduation Year</option>
+									<option>2019</option>
+									<option>2020</option>
+									<option>2021</option>
+									<option>2022</option>
+								</select>
 
-									<select>
-										<option>Graduation Year</option>
-										<option>2019</option>
-										<option>2020</option>
-										<option>2021</option>
-										<option>2022</option>
-									</select>
-
-								</div>
-
+							</div>
+							<div>
 								<label for="agreed">I agree to the terms and conditions</label>
 								<input id="agreed" name="agreed" type="checkbox">
 							</div>
@@ -105,14 +122,13 @@
 							<div>
 								<input type="submit" value="Submit">
 							</div>
-
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
+	</div>
 </body>
 
 </html>
